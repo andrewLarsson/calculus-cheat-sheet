@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+
+\title{Calculus Cheat Sheet}
+\author{Andrew Ryan Larsson}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+This guide was developed with the purpose of providing mathematicians with an easy-to-use reference for Calculus and Geometry. Written in \LaTeX{}.
+
+\section{Limits}
+
+\subsection{Formal Definition}
+
+Let $\displaystyle \lim_{x \rightarrow c} f(x) = L$, then
+$$\forall \epsilon \enskip \exists \enskip \delta > 0 \; : \; \forall x \enskip ( \; 0 < | \; x - c \; | < \delta \enskip \Rightarrow \enskip | \; f(x) - L \; | < \epsilon \; )$$
+
+\subsection{Identities}
+
+$\displaystyle \lim_{x \rightarrow c} k = k$ \\
+
+$\displaystyle \lim_{x \rightarrow c} x = c$ \\
+
+$\displaystyle \lim_{x \rightarrow c} k f(x) = k \lim_{x \rightarrow c} f(x)$ \\
+
+$\displaystyle \lim_{x \rightarrow c} \big[ f(x) + g(x) \big] = \lim_{x \rightarrow c} f(x) + \lim_{x \rightarrow c} g(x)$ \\
+
+$\displaystyle \lim_{x \rightarrow c} \big[ f(x) \times g(x) \big] = \lim_{x \rightarrow c} f(x) \times \lim_{x \rightarrow c} g(x)$ \\
+
+$\displaystyle \lim_{x \rightarrow c} \frac{f(x)}{g(x)} = \frac{\displaystyle \lim_{x \rightarrow c} f(x)}{\displaystyle \lim_{x \rightarrow c} g(x)}$, provided $\displaystyle \lim_{x \rightarrow c} g(x) \neq 0$ \\
+
+$\displaystyle \lim_{x \rightarrow c} \big[ f(x) \big] ^ n = \big[ \lim_{x \rightarrow c} f(x) \big] ^ n$ \\
+
+$\displaystyle \lim_{x \rightarrow c} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \rightarrow c} f(x)}$, provided $\displaystyle \lim_{x \rightarrow c} f(x) > 0$ when $n$ is even
+
+\subsection{Trigonometric Identities}
+
+$\displaystyle \lim_{\theta \rightarrow 0} \frac{sin(\theta)}{\theta} = 1$ \\
+
+$\displaystyle \lim_{\theta \rightarrow 0} \frac{1 - cos(\theta)}{\theta} = 0$
+
+\subsection{Squeeze Theorem}
+
+Let $f$, $g$, and $h$ be functions satisfying $f(x) \leq g(x) \leq h(x)$ for all $x$ near $c$ (except possibly at $c$). If $\displaystyle \lim_{x \rightarrow c} f(x) = \lim_{x \rightarrow c} h(x) = L$, then $\displaystyle \lim_{x \rightarrow c} g(x) = L$.
+
+\end{document}
